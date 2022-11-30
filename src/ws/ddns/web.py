@@ -12,7 +12,7 @@ except ImportError:
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/nic/update')
 def update_view():
     config = ConfigParser({
         'url': 'https://gateway.schlundtech.de',
